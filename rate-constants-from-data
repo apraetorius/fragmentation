@@ -19,7 +19,7 @@ def eq(par,initial_cond,start_t,end_t,incr):
         f0 = -k1*P0-k2*P0-k3*P0
         f1 = +k1*P0
         f2 = +k2*P0
-        f3 = +k2*P0
+        f3 = +k3*P0
         return [f0, f1, f2, f3]
     #integrate------------------------------------
     ds = integrate.odeint(funct,initial_cond,t)
@@ -107,9 +107,9 @@ print(k1,k2,k3)
 
 #5.Generate Solution to System
 #=======================================================
-F0,F1,F2,F3,T=eq(newrates,y0,start_time,end_time,intervals)
-my_list = [0, 50, 99]
-Zm=F1[my_list]
-Tm=T[my_list]
+#F0,F1,F2,F3,T=eq(newrates,y0,start_time,end_time,intervals)
+#my_list = [0, 50, 99]
+#Zm=F1[my_list]
+#Tm=T[my_list]
 #======================================================
 print(Zm)
