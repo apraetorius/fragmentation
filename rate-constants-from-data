@@ -38,8 +38,8 @@ from scipy.optimize import fmin
 #1.Get Data
 #====================================================
 Td=np.array([0,1000,2000]).astype(int)#time
-M1=np.array([0,0.32,0.52])#mass p1
-M2=np.array([0,0.02,0.25])#mass p2
+M1=np.array([0,0.32,0.49])#mass p1
+M2=np.array([0,0.01,0.25])#mass p2
 M3=np.array([0,0.08,0.56])#mass p3
 #====================================================
 
