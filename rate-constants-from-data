@@ -15,7 +15,7 @@ def eq(par,initial_cond,start_t,end_t,incr):
         P2=y[2]
         P3=y[3]
         k1,k2,k3=par
-        # the model equations (see Munz et al. 2009)
+        # the model equations 
         f0 = -k1*P0-k2*P0-k3*P0
         f1 = +k1*P0
         f2 = +k2*P0
